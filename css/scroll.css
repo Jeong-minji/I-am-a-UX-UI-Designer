@@ -155,7 +155,7 @@ html, body{
     position: absolute;
     margin-top: 46%;
     width: 54%;
-    margin-left: 19%;
+    margin-left: 20%;
     padding: 1%;
 }
 
@@ -171,6 +171,7 @@ html, body{
     text-align: right;
     margin-top: 20%;
     margin-bottom: 20%;
+    letter-spacing: 1px;
 }
 
 #chart_bar {
@@ -182,10 +183,270 @@ html, body{
 }
 
 .bar {
-    background-color: #3bdb32;
-    width: 100%;
     height: 14px;
     margin-bottom: 5.35%;
+    animation-fill-mode:forwards;
+    background-color: none;
+}
+
+.value {
+    font-size: 14px;
+    position: absolute;
+    animation-fill-mode: forwards;
+    margin-top: -6%;
+    color: transparent;
+}
+
+/*Chart Animation*/
+
+#bar1 {
+    animation-name: bar1;
+    animation-duration: 1s;
+}
+
+@keyframes bar1 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 75%;
+    }
+}
+
+#value1 {
+    animation-name: value1;
+    animation-duration: 1s;
+}
+
+@keyframes value1 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 58%;
+    }
+}
+
+#bar2 {
+    animation-name: bar2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes bar2 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 70%;
+    }
+}
+
+#value2 {
+    animation-name: value2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes value2 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 54%;
+    }
+}
+
+#bar3 {
+    animation-name: bar3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes bar3 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 95%;
+    }
+}
+
+#value3 {
+    animation-name: value3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes value3 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 73%;
+    }
+}
+
+#bar4 {
+    animation-name: bar4;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+@keyframes bar4 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 85%;
+    }
+}
+
+#value4 {
+    animation-name: value4;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+@keyframes value4 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 66%;
+    }
+}
+
+#bar5 {
+    animation-name: bar5;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+@keyframes bar5 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 80%;
+    }
+}
+
+#value5 {
+    animation-name: value5;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+@keyframes value5 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 62%;
+    }
+}
+
+#bar6 {
+    animation-name: bar6;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+
+@keyframes bar6 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 85%;
+    }
+}
+
+#value6 {
+    animation-name: value6;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+
+@keyframes value6 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 66%;
+    }
+}
+
+#bar7 {
+    animation-name: bar7;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+@keyframes bar7 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 80%;
+    }
+}
+
+#value7 {
+    animation-name: value7;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+@keyframes value7 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 62%;
+    }
 }
 
 #third {
