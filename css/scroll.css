@@ -1,0 +1,191 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#cover{
+    width: 100%;
+    height: 610%;
+    /* background: rgba(90, 128, 188, 0.5); */
+    background: rgba(51, 59, 80, 0.6);
+    position: absolute;
+}
+
+#first {
+    background-image: url("../img/profile.jpg");
+    height: 130%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    font-size: 80px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+#intro {
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 50px;
+    margin-left: 35%;
+    margin-top: 32%;
+}
+
+.green {
+    color: #3bdb32;
+}
+
+.tag {
+    width: 54%;
+    height: 60%;
+    background-color: #333b50;
+    box-shadow: 3px 3px 100px 1px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    position: absolute;
+    left: 23%;
+    top: 100%;
+    background-attachment: scroll;
+}
+
+#logo{
+    text-align: center;
+    padding-left: 45%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#shape_text {
+    float: left;
+    font-size: 45px;
+    margin-top: 2%;
+    margin-left: 6%;
+    color: #3bdb32;
+    font-weight: bold;
+}
+
+#shape {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 0 0 #3bdb32;
+    transform: rotate(-70deg);
+}
+
+#explain {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+#btn_down {
+    background: none;
+    border:1px solid #3bdb32;
+    color: white;
+    font-size: 14px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+#btn_down:hover{
+    animation: delay 2s 0s infinite;
+    animation-fill-mode: paused;
+}
+
+
+@keyframes delay {
+    from {
+        background-color: none;
+    } to {
+        background-color: #3bdb32;
+    }
+}
+
+#second {
+    height: 180%;
+    background-image: url("../img/desktop.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_num {
+    font-size: 44px;
+    position: absolute;
+    color: white;
+    margin-top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.num {
+    letter-spacing: 6px;
+    color: #939DAB;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#add {
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-top: 37%;
+}
+
+#chart_title {
+    position: absolute;
+    margin-top: 48%;
+    padding: 1%;
+    margin-left: 20%;
+    text-align: right;
+    color: white;
+    font-weight: lighter;
+    line-height: 50px;
+    border: 1px solid black;
+    float: left;
+}
+
+#chart_graph{
+    position: absolute;
+    margin-top: 48%;
+    margin-left: 29%;
+    border:1px solid black;
+    padding-top: 1%;
+}
+
+.bar {
+    width: 500px;
+    height: 14px;
+    border:1px solid black;
+    background-color: #3bdb32;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#third {
+    background-image: url("../img/ski.jpg");
+    width: 100%;
+    height: 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
