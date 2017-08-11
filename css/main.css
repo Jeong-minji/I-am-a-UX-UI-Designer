@@ -1,8 +1,528 @@
-html, body {
+html, body{
     margin: 0;
     padding: 0;
 }
 
-div{
-    box-sizing: border-box;
-} 
+#cover{
+    width: 100%;
+    height: 710%;
+    /* background: rgba(90, 128, 188, 0.5); */
+    background: rgba(51, 59, 80, 0.6);
+    position: absolute;
+}
+
+#first {
+    background-image: url("../img/profile.jpg");
+    height: 130%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    font-size: 80px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+#intro {
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 50px;
+    margin-left: 35%;
+    margin-top: 32%;
+}
+
+.green {
+    color: #3bdb32;
+}
+
+.tag {
+    width: 54%;
+    height: 60%;
+    background-color: #333b50;
+    box-shadow: 3px 3px 100px 1px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    position: absolute;
+    left: 23%;
+    top: 100%;
+    background-attachment: scroll;
+}
+
+#logo{
+    text-align: center;
+    padding-left: 45%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#shape_text {
+    float: left;
+    font-size: 45px;
+    margin-top: 2%;
+    margin-left: 6%;
+    color: #3bdb32;
+    font-weight: bold;
+}
+
+#shape {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 0 0 #3bdb32;
+    transform: rotate(-70deg);
+}
+
+#explain {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+#btn_down {
+    background: none;
+    border:1px solid #3bdb32;
+    color: white;
+    font-size: 14px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+#btn_down:hover{
+    animation: delay 2s 0s infinite;
+    animation-fill-mode: paused;
+}
+
+
+@keyframes delay {
+    from {
+        background-color: none;
+    } to {
+        background-color: #3bdb32;
+    }
+}
+
+#second {
+    height: 180%;
+    background-image: url("../img/desktop.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_num {
+    font-size: 44px;
+    position: absolute;
+    color: white;
+    margin-top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.num {
+    letter-spacing: 6px;
+    color: #939DAB;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#add {
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-top: 37%;
+}
+
+#chart {
+    position: absolute;
+    margin-top: 46%;
+    width: 54%;
+    margin-left: 20%;
+    padding: 1%;
+    opacity: 0.7;
+}
+
+#chart_title {
+    font-size: 14px;
+    color: white;
+    padding: 1%;
+    width: 18%;
+    float: left;
+}
+
+.title {
+    text-align: right;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    letter-spacing: 1px;
+}
+
+#chart_bar {
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-bottom: 0.8%;
+    float: left;
+    width: 77%;
+}
+
+.bar {
+    height: 14px;
+    margin-bottom: 5.35%;
+    animation-fill-mode:forwards;
+    background-color: none;
+}
+
+.value {
+    font-size: 14px;
+    position: absolute;
+    animation-fill-mode: forwards;
+    margin-top: -6%;
+    color: transparent;
+}
+
+/*Chart Animation*/
+
+#bar1 {
+    animation-name: bar1;
+    animation-duration: 1s;
+}
+
+@keyframes bar1 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 75%;
+    }
+}
+
+#value1 {
+    animation-name: value1;
+    animation-duration: 3s;
+}
+
+@keyframes value1 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 58%;
+    }
+}
+
+#bar2 {
+    animation-name: bar2;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+@keyframes bar2 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 70%;
+    }
+}
+
+#value2 {
+    animation-name: value2;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+@keyframes value2 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 54%;
+    }
+}
+
+#bar3 {
+    animation-name: bar3;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes bar3 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 95%;
+    }
+}
+
+#value3 {
+    animation-name: value3;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes value3 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 73%;
+    }
+}
+
+#bar4 {
+    animation-name: bar4;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+}
+
+@keyframes bar4 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 85%;
+    }
+}
+
+#value4 {
+    animation-name: value4;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+@keyframes value4 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 66%;
+    }
+}
+
+#bar5 {
+    animation-name: bar5;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes bar5 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 80%;
+    }
+}
+
+#value5 {
+    animation-name: value5;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes value5 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 62%;
+    }
+}
+
+#bar6 {
+    animation-name: bar6;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+}
+
+@keyframes bar6 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 85%;
+    }
+}
+
+#value6 {
+    animation-name: value6;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+}
+
+@keyframes value6 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 66%;
+    }
+}
+
+#bar7 {
+    animation-name: bar7;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes bar7 {
+    from {
+        background-color: #3bdb32;
+        width: 0%;
+    }
+    to {
+        background-color: #3bdb32;
+        width: 80%;
+    }
+}
+
+#value7 {
+    animation-name: value7;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes value7 {
+    from {
+        color: white;
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        color: white;
+        opacity: 1;
+        margin-left: 62%;
+    }
+}
+
+#third {
+    /* background-image: url("../img/path.jpg"); */
+    width: 100%;
+    height: 400%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_num2 {
+    font-size: 44px;
+    position: absolute;
+    color: white;
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+#add2 {
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-top: 22%;
+    font-weight: bold;
+}
+
+#project {
+    width: 100%;
+    position: absolute;
+    margin-top: 32%;
+    padding-left: 15.5%;
+    padding-right: 15.5%;
+}
+
+.pro_box {
+    width: 23%;
+    height: 320px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 100px 1px rgba(0, 0, 0, 0.5);
+}
+
+.pro_box:hover {
+    cursor: pointer;
+    animation: shadow 1s 0s;
+    animation-fill-mode: forwards;    
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: inset 0px 0px 00px 0px rgba(0, 0, 0, 0.5);
+    } to {
+        box-shadow: inset 4px 30px 150px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.list_num3 {
+    font-size: 44px;
+    position: absolute;
+    color: white;
+    margin-top: 72%;
+    width: 100%;
+    text-align: center;
+}
+
+#graph {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 39%;
+}
