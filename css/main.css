@@ -481,15 +481,14 @@ html, body{
 }
 
 #project {
-    width: 100%;
+    width: 63.2%;
     position: absolute;
     margin-top: 32%;
-    padding-left: 15.5%;
-    padding-right: 15.5%;
+    margin-left: 18.4%;
 }
 
 .pro_box {
-    width: 23%;
+    width: 320px;
     height: 320px;
     float: left;
     background-position: center;
@@ -506,7 +505,7 @@ html, body{
 
 @keyframes shadow {
     from {
-        box-shadow: inset 0px 0px 00px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
     } to {
         box-shadow: inset 4px 30px 150px 1px rgba(0, 0, 0, 0.5);
     }
@@ -525,4 +524,19 @@ html, body{
     position: absolute;
     margin-top: 80%;
     margin-left: 39%;
+}
+
+#svg {
+    border:1px solid black;
+    width: 350;
+    animation: road 3s 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes road {
+    from {
+        height: 0;
+    } to {
+        height: 1115;
+    }
 }
