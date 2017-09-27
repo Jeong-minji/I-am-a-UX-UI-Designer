@@ -6,13 +6,12 @@ html, body{
 #cover{
     width: 100%;
     height: 710%;
-    /* background: rgba(90, 128, 188, 0.5); */
-    background: rgba(51, 59, 80, 0.6);
+    background: rgba(82, 96, 52, 0.4);
     position: absolute;
 }
 
 #first {
-    background-image: url("../img/profile.jpg");
+    background-image: url("../img/main.jpg");
     height: 130%;
     background-attachment: fixed;
     background-position: center;
@@ -27,7 +26,7 @@ html, body{
     font-weight: bolder;
     position: absolute;
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
 #intro {
@@ -38,11 +37,11 @@ html, body{
     font-style: italic;
     line-height: 50px;
     margin-left: 35%;
-    margin-top: 32%;
+    margin-top: 35%;
 }
 
 .green {
-    color: #3bdb32;
+    color: #2c6649;
 }
 
 .tag {
@@ -69,7 +68,7 @@ html, body{
     font-size: 45px;
     margin-top: 2%;
     margin-left: 6%;
-    color: #3bdb32;
+    color: #2c6649;
     font-weight: bold;
 }
 
@@ -77,7 +76,7 @@ html, body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    box-shadow: 1px 3px 0 0 #3bdb32;
+    box-shadow: 1px 3px 0 0 #2c6649;
     transform: rotate(-70deg);
 }
 
@@ -90,7 +89,7 @@ html, body{
 
 #btn_down {
     background: none;
-    border:1px solid #3bdb32;
+    border:1px solid #2c6649;
     color: white;
     font-size: 14px;
     padding-top: 1.5%;
@@ -111,13 +110,13 @@ html, body{
     from {
         background-color: none;
     } to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
     }
 }
 
 #second {
     height: 180%;
-    background-image: url("../img/desktop.jpg");
+    background-image: url("../img/profile.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,7 +127,7 @@ html, body{
     font-size: 44px;
     position: absolute;
     color: white;
-    margin-top: 30%;
+    margin-top: 34%;
     width: 100%;
     text-align: center;
 }
@@ -148,12 +147,12 @@ html, body{
     font-style: italic;
     width: 100%;
     text-align: center;
-    margin-top: 37%;
+    margin-top: 40%;
 }
 
 #chart {
     position: absolute;
-    margin-top: 46%;
+    margin-top: 44%;
     width: 54%;
     margin-left: 20%;
     padding: 1%;
@@ -207,11 +206,11 @@ html, body{
 
 @keyframes bar1 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 75%;
     }
 }
@@ -242,11 +241,11 @@ html, body{
 
 @keyframes bar2 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 70%;
     }
 }
@@ -278,11 +277,11 @@ html, body{
 
 @keyframes bar3 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 95%;
     }
 }
@@ -314,11 +313,11 @@ html, body{
 
 @keyframes bar4 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 85%;
     }
 }
@@ -350,11 +349,11 @@ html, body{
 
 @keyframes bar5 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 80%;
     }
 }
@@ -386,11 +385,11 @@ html, body{
 
 @keyframes bar6 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 85%;
     }
 }
@@ -422,11 +421,11 @@ html, body{
 
 @keyframes bar7 {
     from {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 0%;
     }
     to {
-        background-color: #3bdb32;
+        background-color: #2c6649;
         width: 80%;
     }
 }
@@ -451,7 +450,7 @@ html, body{
 }
 
 #third {
-    /* background-image: url("../img/path.jpg"); */
+    background-image: url("../img/strawberry.jpg");
     width: 100%;
     height: 400%;
     background-position: center;
@@ -527,16 +526,143 @@ html, body{
 }
 
 #svg {
-    border:1px solid black;
     width: 350;
-    animation: road 3s 0s;
+    height: 1115;
+}
+
+g {
+    fill: transparent;
+}
+
+#pointA, #memo1 {
+    animation: dots 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes road {
+#pointB {
+    animation: dots 2s 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#pointC {
+    animation: dots 2s 1s;
+    animation-fill-mode: forwards;
+}
+
+#pointD {
+    animation: dots 2s 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#pointE {
+    animation: dots 2s 2s;
+    animation-fill-mode: forwards;
+}
+
+#pointF {
+    animation: dots 2s 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dots {
     from {
-        height: 0;
+        fill: transparent;
     } to {
-        height: 1115;
+        fill: #2c6649;
+    }   
+}
+
+#path {
+    stroke: transparent;
+    animation: path 2s 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes path {
+    from {
+        stroke: transparent;
+    } to {
+        stroke: #2c6649;
     }
+}
+
+.right {
+    position: absolute;
+    margin-left: 80%;
+    height: 17%;
+    width: 90%;
+    opacity: 0;
+}
+
+@keyframes memo {
+    from {
+        opacity: 0
+    } to {
+        opacity: 1
+    }
+}
+
+#memo1 {
+    animation: memo 1s 3s;
+    animation-fill-mode: forwards;
+}
+
+#memo2 {
+    animation: memo 1s 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#memo3 {
+    animation: memo 1s 4s;
+    animation-fill-mode: forwards;
+}
+
+#memo4 {
+    animation: memo 1s 4.5s;
+    animation-fill-mode: forwards;
+}
+
+#memo5 {
+    animation: memo 1s 5s;
+    animation-fill-mode: forwards;
+}
+
+#memo6 {
+    animation: memo 1s 5.5s;
+    animation-fill-mode: forwards;
+}
+
+.left {
+    position: absolute;
+    height: 17%;
+    width: 90%;
+    right: 80%;
+    text-align: right;
+    opacity: 0;
+}
+
+.year {
+    color: #2c6649;
+    font-weight: bold;
+}
+
+.short {
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 3%;
+}
+
+.plus {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8%;
+}
+
+.memo {
+    color: black;
+    font-size: 15px;
+    margin-top: 2%;
+    line-height: 24px;
 }
