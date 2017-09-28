@@ -1,9 +1,3 @@
-// $(window).scroll(function() {
-//     if(($(document).scrollTop() > 974)&&($(document).scrollTop() < 1000)) {
-//         $("#square").animate({height: "300px"}, 2000);
-//     }
-// });
-
 var bar1 = 75;
 var bar2 = 70;
 var bar3 = 95;
@@ -21,8 +15,6 @@ $(window).ready(function() {
     $("#value6").html(bar6 + "%");
     $("#value7").html(bar7 + "%");
 });
-
-
 
 $(window).scroll(function() {
     if($(document).scrollTop() == 1360) {
@@ -42,3 +34,5 @@ $(window).scroll(function() {
         $("#value7").delay(3000).animate({left: (bar7 + 5) + "%", opacity: "1"}, 2000);
     }
 });
+
+//3360

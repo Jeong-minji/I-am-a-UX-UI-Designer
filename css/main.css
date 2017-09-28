@@ -230,10 +230,9 @@ html, body{
 }
 
 #project {
-    width: 63.2%;
     position: absolute;
+    border:1px solid black;
     margin-top: 32%;
-    margin-left: 18.4%;
 }
 
 .pro_box {
